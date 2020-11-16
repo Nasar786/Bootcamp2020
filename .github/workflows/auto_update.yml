@@ -31,4 +31,4 @@ jobs:
       - name: Installing surge
         run:  npm install --global surge
       - name: deploying surge 
-        run : surge ./ nasar.surge.sh --token "011932960268b52cf16e3a82c201661c"
+        run : surge ./ nasar.surge.sh --token ${{ secrets.SURGE_SECRET }}
